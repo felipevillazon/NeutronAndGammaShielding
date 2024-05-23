@@ -1,0 +1,8 @@
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/NSTSim.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/NST.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/edit_cache.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/rebuild_cache.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/list_install_components.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/install.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/install/local.dir
+/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/install/strip.dir

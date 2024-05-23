@@ -1,0 +1,834 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Linux - 6.5.0-26-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/3.27.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/3.27.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3e865/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3e865.dir/build.make CMakeFiles/cmTC_3e865.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e865.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3e865.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccaUAMDu.s
+        GNU C17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        warning: GMP header version 6.3.0 differs from library version 6.2.1.
+        warning: MPFR header version 4.2.1 differs from library version 4.0.2.
+        warning: MPC header version 1.3.1 differs from library version 1.1.0.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: edbc28f9c9bb85637ee0b8e5b79ac141
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e865.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o /tmp/ccaUAMDu.s
+        GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_3e865
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e865.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o -o cmTC_3e865 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3e865' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3e865.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cco9MI72.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3e865 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3e865' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3e865.'
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3e865/fast]
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3e865.dir/build.make CMakeFiles/cmTC_3e865.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-sb4NrQ']
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [Building C object CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e865.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3e865.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccaUAMDu.s]
+        ignore line: [GNU C17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [warning: GMP header version 6.3.0 differs from library version 6.2.1.]
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.0.2.]
+        ignore line: [warning: MPC header version 1.3.1 differs from library version 1.1.0.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: edbc28f9c9bb85637ee0b8e5b79ac141]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e865.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o /tmp/ccaUAMDu.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.']
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [Linking C executable cmTC_3e865]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e865.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o -o cmTC_3e865 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3e865' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3e865.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cco9MI72.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3e865 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cco9MI72.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3e865] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_3e865.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e440f/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e440f.dir/build.make CMakeFiles/cmTC_e440f.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building CXX object CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e440f.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e440f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccg8rrNa.s
+        GNU C++17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        warning: GMP header version 6.3.0 differs from library version 6.2.1.
+        warning: MPFR header version 4.2.1 differs from library version 4.0.2.
+        warning: MPC header version 1.3.1 differs from library version 1.1.0.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 2d107d43320bae9d835c0808be5fcba6
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e440f.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccg8rrNa.s
+        GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking CXX executable cmTC_e440f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e440f.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e440f 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e440f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e440f.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0OBKcj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e440f /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e440f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e440f.'
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e440f/fast]
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e440f.dir/build.make CMakeFiles/cmTC_e440f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-efV1JW']
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [Building CXX object CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e440f.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e440f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccg8rrNa.s]
+        ignore line: [GNU C++17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [warning: GMP header version 6.3.0 differs from library version 6.2.1.]
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.0.2.]
+        ignore line: [warning: MPC header version 1.3.1 differs from library version 1.1.0.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2d107d43320bae9d835c0808be5fcba6]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e440f.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccg8rrNa.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [Linking CXX executable cmTC_e440f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e440f.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e440f ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e440f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e440f.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0OBKcj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e440f /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc0OBKcj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e440f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_e440f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:286 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-uEX9y3"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-uEX9y3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-uEX9y3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d190/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d190.dir/build.make CMakeFiles/cmTC_3d190.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-uEX9y3'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_3d190.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3d190.dir/src.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-uEX9y3/src.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_3d190
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d190.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc CMakeFiles/cmTC_3d190.dir/src.c.o -o cmTC_3d190 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-uEX9y3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:384 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-6dpGw8"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-6dpGw8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-6dpGw8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0f720/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0f720.dir/build.make CMakeFiles/cmTC_0f720.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-6dpGw8'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_0f720.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_0f720.dir/CheckFunctionExists.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-6dpGw8/CheckFunctionExists.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_0f720
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f720.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_0f720.dir/CheckFunctionExists.c.o -o cmTC_0f720  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-6dpGw8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:384 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-Vu58GC"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-Vu58GC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-Vu58GC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e20af/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e20af.dir/build.make CMakeFiles/cmTC_e20af.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-Vu58GC'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_e20af.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_e20af.dir/CheckFunctionExists.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-Vu58GC/CheckFunctionExists.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_e20af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e20af.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_e20af.dir/CheckFunctionExists.c.o -o cmTC_e20af 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-Vu58GC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:384 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-VvWajm"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-VvWajm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-VvWajm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cd0fa/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cd0fa.dir/build.make CMakeFiles/cmTC_cd0fa.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-VvWajm'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_cd0fa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_cd0fa.dir/CheckFunctionExists.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-VvWajm/CheckFunctionExists.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_cd0fa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd0fa.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_cd0fa.dir/CheckFunctionExists.c.o -o cmTC_cd0fa 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-VvWajm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:384 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-pmF5K0"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-pmF5K0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-pmF5K0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cb379/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cb379.dir/build.make CMakeFiles/cmTC_cb379.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-pmF5K0'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_cb379.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_cb379.dir/CheckFunctionExists.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-pmF5K0/CheckFunctionExists.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_cb379
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb379.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_cb379.dir/CheckFunctionExists.c.o -o cmTC_cb379 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-pmF5K0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:384 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-R3eOwP"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-R3eOwP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-R3eOwP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e923/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4e923.dir/build.make CMakeFiles/cmTC_4e923.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-R3eOwP'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_4e923.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_4e923.dir/CheckFunctionExists.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-R3eOwP/CheckFunctionExists.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_4e923
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e923.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_4e923.dir/CheckFunctionExists.c.o -o cmTC_4e923 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-R3eOwP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Geant4Config.cmake:384 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-85OdBC"
+      binary: "/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-85OdBC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/felipe/geant4/geant4-v11.2.1-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-85OdBC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_50029/fast
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/gmake  -f CMakeFiles/cmTC_50029.dir/build.make CMakeFiles/cmTC_50029.dir/build
+        gmake[1]: Entering directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-85OdBC'
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Building C object CMakeFiles/cmTC_50029.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_50029.dir/CheckFunctionExists.c.o -c /home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-85OdBC/CheckFunctionExists.c
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        Linking C executable cmTC_50029
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50029.dir/link.txt --verbose=1
+        /usr/bin/cmake: /home/felipe/anaconda3/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_50029.dir/CheckFunctionExists.c.o -o cmTC_50029  -lICE 
+        gmake[1]: Leaving directory '/home/felipe/geant4/projects/NeutronShieldTest/build/CMakeFiles/CMakeScratch/TryCompile-85OdBC'
+        
+      exitCode: 0
+...

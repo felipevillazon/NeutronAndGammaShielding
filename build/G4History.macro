@@ -1,0 +1,47 @@
+/run/verbose 2
+/run/initialize
+/control/execute vis.mac
+/vis/open
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/tracking/verbose 1
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/scene/endOfEventAction accumulate
+/vis/geometry/set/visibility World 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Envelope 0 0 0 1 .3
+/vis/viewer/set/style surface
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 120 150
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/run/beamOn 1
+/vis/scene/notifyHandlers scene-0
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
