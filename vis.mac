@@ -1,0 +1,31 @@
+/vis/open OGL
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+
+
+/control/verbose 2
+/run/verbose 2
+/tracking/verbose 2
+
+/vis/viewer/set/viewpointThetaPhi -70 190
+/vis/viewer/set/lightsVector -1 0 0
+
+
+/vis/set/colour red
+/vis/set/lineWidth 2
+/vis/scene/add/frame   # Simple frame around the view
+/vis/set/colour        # Revert to default colour (white)
+/vis/set/lineWidth     # Revert to default line width (1.)
+/vis/viewer/set/background white
+
+
+
+/vis/geometry/set/colour World 0 0 0 .5 .3
+/vis/geometry/set/colour TMaterial 0 1 0.1 1 1	
+/vis/geometry/set/colour SD 0 0.5 1 0.5 1
+
+
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+
